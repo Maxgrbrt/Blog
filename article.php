@@ -122,7 +122,7 @@ if (isset($_POST['submit'])) {
         }
     }
     $_SESSION['notification'] = $notification;
-    header('Location: article.php?action=Ajouter');
+    header('Location: index.php');
     exit();
 } else {
     include 'include/header.inc.php';

@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
                 if ($sth_update->execute() == TRUE) {
                     setcookie('sid', $sid, time() + 86400);
                     $_SESSION['notification_result'] = TRUE;
-                    $notification = 'Vous etes connecte';
+                    $notification = 'Vous êtes connecté';
                     $_SESSION['notification'] = $notification;
 
                     header("Location: index.php");
